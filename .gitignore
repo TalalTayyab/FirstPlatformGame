@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
@@ -97,3 +98,32 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+=======
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+obj/
+MemoryCaptures/
+
+# Visual Studio / Rider / VSCode
+.vscode/
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.suo
+*.sln.*
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Crashlytics / build artifacts
+*.apk
+*.aab
+>>>>>>> 8b0f059 (Project)
