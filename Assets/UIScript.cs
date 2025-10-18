@@ -5,6 +5,7 @@ public class UIScript : MonoBehaviour
 {
     public static UIScript Instance;
     private int killCount = 0;
+    private float startTime;
 
     [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI timerText;
@@ -16,11 +17,14 @@ public class UIScript : MonoBehaviour
     {
         Instance = this;
         Time.timeScale = 1f;
+        // initialize timer start so we can reset it on restart
+        startTime = Time.time;
     }
 
     void Update()
     {
-        timerText.text = Time.time.ToString("F2") + "s";
+        float elapsed = Time.time - startTime;
+        timerText.text = elapsed.ToString("F2") + "s";
     }
 
     public void UpdateKillCount()
@@ -38,6 +42,8 @@ public class UIScript : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
+        // reset timer start so the timer shows 0 immediately (useful if Restart is called without a full app restart)
+        startTime = Time.time;
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 }

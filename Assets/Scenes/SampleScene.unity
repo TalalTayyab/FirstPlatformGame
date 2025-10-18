@@ -661,11 +661,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   enemyPrefab: {fileID: 2435046162442437090, guid: 4c36fd83931804c0291e0d9118661940, type: 3}
-  spawnInterval: 3
+  spawnInterval: 4
   spawnPoints:
   - {fileID: 224275999}
   - {fileID: 95612248}
-  cooldownTimer: 0.3
+  cooldownTimer: 0.005
 --- !u!1 &224275998
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,7 +3250,7 @@ MonoBehaviour:
     m_Bits: 64
   health: 10
   damageMaterial: {fileID: 2100000, guid: 001d89bf10467472ab3dbf5d38a13836, type: 2}
-  flashDuration: 0.2
+  flashDuration: 0.1
 --- !u!1 &1893964897
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,9 +8,9 @@ public class EnemyScript : Entity
     {
         target = GameObject.FindAnyObjectByType<CatScript>().transform;
 
-        if (transform.position.x < target.position.x)
+        if (transform.position.x > target.position.x)
         {
-            facingRight = false;
+            facingRight = true;
         }
             
 

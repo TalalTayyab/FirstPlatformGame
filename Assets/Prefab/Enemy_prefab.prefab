@@ -51,7 +51,7 @@ MonoBehaviour:
   enableMovement: 1
   speed: 2
   isGrounded: 0
-  facingRight: 0
+  facingRight: 1
   target: {fileID: 0}
   enableAttack: 1
   attackRadius: 0.77
@@ -66,7 +66,7 @@ MonoBehaviour:
     m_Bits: 64
   health: 2
   damageMaterial: {fileID: 2100000, guid: 001d89bf10467472ab3dbf5d38a13836, type: 2}
-  flashDuration: 0.2
+  flashDuration: 0.1
 --- !u!70 &6992006510692309614
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
